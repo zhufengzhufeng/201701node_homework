@@ -105,3 +105,35 @@
     v-for（循环数组，对象，字符串 v-for="value of/in items"）
     v-on(可以绑定事件 v-on:事件名="函数名"，可以把v-on简写成@符号)
     v-show/v-if(控制元素的显示和隐藏，v-show控制的是样式，v-if控制的是dom元素的增加和删除)
+## 修饰符
+    .stop 阻止冒泡事件（停止向上传递）
+    .capture 增加给父级的让事件从外向内执行，会发生冒泡事件
+    .self 由自己触发，不包括自己的子级
+    .prevent 阻止默认行为
+    .once 只绑定一次事件（在执行事件后移除事件）
+    .code 根据键盘码触发事件 .enter .space .delete
+    
+## 绑定动态属性
+>- 动态绑定用v-bind绑定，可以简写成:
+>- 在绑定动态属性中有两个特殊class，style
+
+### class
+    1、对象绑定
+    ```
+    .a{backgroud:'red'},
+    .b{color:'green'}
+    <div :class="{a:flag,b:flag}"></div>
+    data:{flag:true,flag:true}
+    ```
+    2、数组绑定
+    ```
+    .a{backgroud:'red'},
+    .b{color:'green'}
+    <div :class="[c1,c2]"></div>
+    data:{c1:'a',c2:'b'}
+    ```
+### 样式绑定
+    ```
+    <div :style="{background:color,fontSize:'50px'}">行内样式</div>
+    <div :style="[s1,s2]">行内样式</div>
+    data:{s1:{ background:'blue'}, s2:{ color:'#fff'}}
