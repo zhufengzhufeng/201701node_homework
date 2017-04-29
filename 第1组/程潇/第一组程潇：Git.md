@@ -1,5 +1,10 @@
 ## Git
 
+##### linux常用命令
+1.`mv  <文件名>  .`     移动某个文件到当前文件夹
+2.`mkdir -p a/b/c`    递归创建文件夹a/b/c
+
+
 ##### 基本流程
 - 1.配置用户名和邮箱
 	-  用git第一次需要配置， 以后都不需要
@@ -88,3 +93,6 @@
 
 获取自己仓库的代码
   `git clone https://github.com/GayeChen/201701node_homework`
+
+
+
