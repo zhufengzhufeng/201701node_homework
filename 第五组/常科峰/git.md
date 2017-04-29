@@ -94,4 +94,4 @@ git config --list查看是否配置过名字和邮箱
 - github会给你一个在线地址
 
 ## 获取自己的仓库代码
-- git clone 仓库地址 别名
+- git clone 仓库地址 别名常科峰
